@@ -25,7 +25,7 @@ resource "aws_instance" "ec2-instance0" {
 
   user_data = <<-EOF
     #!/bin/bash
-    echo "Hello, Wrld!" > index.html
+    echo "Hello, World!" > index.html
     nohup busybox httpd -f -p 8080 &
   EOF
 }
