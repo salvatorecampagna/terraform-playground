@@ -9,7 +9,6 @@ terraform {
 
 provider "aws" {
   region = "us-west-2"
-  profile = "terraform-user"
 }
 
 resource "aws_instance" "ec2-instance0" {
